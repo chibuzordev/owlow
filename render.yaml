@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: propintel-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api_service.main:app --host 0.0.0.0 --port 10000
+    plan: free
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: True
+
+  - type: worker
+    name: propintel-recommender
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python recommender_worker/train_recommender.py
+    plan: free
+
+  - type: worker
+    name: propintel-analyzer
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python analyzer_worker/analyze_batch.py
+    plan: free
