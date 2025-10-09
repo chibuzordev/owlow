@@ -1,0 +1,9 @@
+[
+  {
+    "reference_id": "123",
+    "recommendations": [
+      {"match_id": "124", "title": "Modern Apartment in Warsaw", "price": 390000, "similarity_score": 0.93},
+      {"match_id": "125", "title": "Cozy Studio in Warsaw Center", "price": 410000, "similarity_score": 0.91}
+    ]
+  }
+]

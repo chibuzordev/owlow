@@ -1,0 +1,13 @@
+[
+  {
+    "id": "123",
+    "pred_condition": "Wyremontowane",
+    "elements": {
+      "kuchnia": "Nowa",
+      "łazienka": "Nowa",
+      "podłogi": "Nowe",
+      "okna": "Nowe",
+      "instalacje": "Brak danych"
+    }
+  }
+]
