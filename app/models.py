@@ -49,7 +49,7 @@ class PropertyNormalizer:
         text_parts.append(description or "")
         return " ".join([t.lower() for t in text_parts if t])
 
-
+    @staticmethod
     def _stringify(v):
         if isinstance(v, dict):
             # flatten dicts like {"value": 7863, "currency": "PLN"}
@@ -112,5 +112,6 @@ class Preprocessor:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors="coerce")
         return df
+
 
 
