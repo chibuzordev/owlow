@@ -146,4 +146,4 @@ class Advisor:
             time.sleep(0.5)
         # fallback deterministic advice:
         return "No strong AI advice available; consider widening your search area or increasing budget slightly."
-s
+
