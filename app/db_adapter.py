@@ -18,17 +18,36 @@ class LocalDBAdapter:
         if not os.path.exists(ANALYSIS_CACHE):
             with open(ANALYSIS_CACHE, "w", encoding="utf-8") as f:
                 json.dump({}, f)
-
+                
     def fetch_all_raw(self) -> List[Dict]:
         """
-        Load listings from local file (data.json). 
-        You can put your processed data in this file to simulate DB data.
+        Load listings from local file (data.json).
+        Automatically fixes common JSON format issues (concatenated arrays, newline JSON, etc.).
         """
         if not os.path.exists(DATA_PATH):
-            raise FileNotFoundError(f"Missing {DATA_PATH}. Please place your processed listings JSON here.")
+            os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
+            with open(DATA_PATH, "w", encoding="utf-8") as f:
+                json.dump([], f)
+            print(f"[INFO] Created empty dataset at {DATA_PATH}")
+            return []
+    
         with open(DATA_PATH, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data if isinstance(data, list) else [data]
+            content = f.read().strip()
+    
+        # Fix accidental concatenated arrays (e.g. "][")
+        if "][" in content:
+            content = content.replace("][", ",")
+    
+        # Try parsing as a single JSON value
+        try:
+            data = json.loads(content)
+            return data if isinstance(data, list) else [data]
+        except json.JSONDecodeError:
+            # fallback: newline-delimited JSON
+            print("[WARN] Malformed JSON detected — attempting line-by-line parse.")
+            lines = [json.loads(line) for line in content.splitlines() if line.strip()]
+            return lines
+
 
     def update_analysis_batch(self, updates: List[Dict[str, any]]):
         """
@@ -67,6 +86,7 @@ class DBAdapter:
         and update DB accordingly (JSONB column).
         """
         raise NotImplementedError("Implement update_analysis_batch to persist analysis into DB")
+
 
 
 
