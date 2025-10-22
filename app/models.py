@@ -49,6 +49,15 @@ class PropertyNormalizer:
         text_parts.append(description or "")
         return " ".join([t.lower() for t in text_parts if t])
 
+
+    def _stringify(v):
+        if isinstance(v, dict):
+            # flatten dicts like {"value": 7863, "currency": "PLN"}
+            return " ".join([f"{k}:{val}" for k, val in v.items()])
+        if isinstance(v, list):
+            return " ".join(map(str, v))
+        return str(v)
+    
     def normalize(self, record: Dict[str, Any]) -> Property:
         location = record.get("location", {}) or {}
         # add = {item.get("label", "").strip(): item.get("value", "") for item in record.get("additionalInfo", []) or []}
@@ -59,7 +68,8 @@ class PropertyNormalizer:
             if isinstance(item, dict)
         }
 
-        extras_blob = " ".join([v for v in add.values() if isinstance(v, str)]) + " " + (record.get("description") or "")
+        extras_blob = " ".join([_stringify(v) for v in add.values()]) + " " + str(record.get("description") or "")
+        # extras_blob = " ".join([v for v in add.values() if isinstance(v, str)]) + " " + (record.get("description") or "")
         extras_blob = extras_blob.lower()
 
         features = {}
@@ -102,4 +112,5 @@ class Preprocessor:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors="coerce")
         return df
+
 
