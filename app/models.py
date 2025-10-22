@@ -51,7 +51,13 @@ class PropertyNormalizer:
 
     def normalize(self, record: Dict[str, Any]) -> Property:
         location = record.get("location", {}) or {}
-        add = {item.get("label", "").strip(): item.get("value", "") for item in record.get("additionalInfo", []) or []}
+        # add = {item.get("label", "").strip(): item.get("value", "") for item in record.get("additionalInfo", []) or []}
+
+        add = {
+            item.get("label", "").strip(): item.get("value", "")
+            for item in record.get("additionalInfo", []) or []
+            if isinstance(item, dict)
+        }
 
         extras_blob = " ".join([v for v in add.values() if isinstance(v, str)]) + " " + (record.get("description") or "")
         extras_blob = extras_blob.lower()
@@ -96,3 +102,4 @@ class Preprocessor:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors="coerce")
         return df
+
