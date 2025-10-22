@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: owlow
+    env: docker
+    plan: starter  # use 'free' if allowed; 'starter' handles longer build times
+    region: frankfurt  # or 'oregon', 'singapore' — pick closest to Poland
+
+    # Expose your API on port 8000 (FastAPI)
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: OPENAI_API_KEY
+        sync: false   # You’ll add this in Render Dashboard (Environment tab)
+      - key: DATA_PATH
+        value: /data/data.json
+      - key: ANALYSIS_CACHE
+        value: /data/analysis_cache.json
+
+    dockerCommand: >
+      uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2
+
+    healthCheckPath: /health
