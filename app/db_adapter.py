@@ -3,7 +3,7 @@ import json, os
 from typing import List, Dict
 from .models import Property
 
-DATA_PATH = "./data/data.json"
+DATA_PATH = "./data.json"
 ANALYSIS_CACHE = os.getenv("ANALYSIS_CACHE", "analysis_cache.json")
 
 class LocalDBAdapter:
@@ -67,6 +67,7 @@ class DBAdapter:
         and update DB accordingly (JSONB column).
         """
         raise NotImplementedError("Implement update_analysis_batch to persist analysis into DB")
+
 
 
 
