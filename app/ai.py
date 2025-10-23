@@ -127,23 +127,18 @@ class Advisor:
     def advise(self, user_query: str, top_properties: List[Dict[str, Any]]) -> str:
         # stateless call
         context = json.dumps(top_properties[:5], ensure_ascii=False)
-        system = ("ROLE: Professional property advisor. Output plain text only, one short paragraph, no quotes, no markdown.")
+        system = ("ROLE: Professional property advisor. Never return empty string. Output plain text only, one short paragraph, no quotes, no markdown.")
         user = f"Query: {user_query}\nTop properties (JSON):\n{context}\n Provide concise advice."
 
-        for _ in range(self.max_retries + 1):
-            try:
-                resp = client.responses.create(
-                    model=self.model,
-                    input=[{"role":"system","content":system},{"role":"user","content":user}],
-                    max_output_tokens=300
-                )
-                raw = getattr(resp, "output_text", "") or ""
-            except Exception as e:
-                raw = ""
-            txt = self._sanitize(raw)
-            if self._looks_valid(txt):
-                return txt
-            time.sleep(0.5)
-        # fallback deterministic advice:
-        return "No strong AI advice available; consider widening your search area or increasing budget slightly."
+        response = client.chat.completions.create(
+            model="gpt-4o-mini", 
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            temperature=0.7,
+            max_tokens=400,
+        )
+        print("DEBUG: Advisor response =>", response.dict())  # temporary line
+        return response.choices[0].message.content.strip()
 
