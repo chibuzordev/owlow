@@ -8,6 +8,7 @@ from .ai import AIFilterParser, PropertyAnalyzer, Advisor
 from .recommender import PropertyRecommender, SessionCache
 #from .db_adapter import DBAdapter
 from .db_adapter import LocalDBAdapter as DBAdapter
+import asyncio
 
 app = FastAPI()
 
@@ -35,17 +36,44 @@ def analyze_all(use_llm: bool = True):
     Batch analyze step. Intended to be run periodically (cron, scheduler) or on-demand.
     It fetches all raw records, normalizes them, runs analyze_batch, and persists.
     """
+    print("🧩 [ANALYZE] Starting analysis...")
+
     raw = db.fetch_all_raw()
     if not raw:
+        print("⚠️ No raw data found.")
         return {"status": "no_data"}
+
+    print(f"✅ Loaded {len(raw)} records")
     props = [normalizer.normalize(r) for r in raw]
-    results = analyzer.analyze_batch(props, use_llm=use_llm)
-    # build updates list
-    updates = []
-    for p, analysis in zip(props, results):
-        updates.append({"id": p.id, "analysis": analysis})
+    print("🔧 Normalization done")
+
+    # Run analyzer — optionally using LLM if enabled
+    try:
+        results = analyzer.analyze_batch(props, use_llm=use_llm)
+    except Exception as e:
+        print("❌ Error during analysis:", e)
+        raise HTTPException(status_code=500, detail=f"Analyzer failed: {e}")
+
+    print(f"🧠 Analysis produced {len(results)} results")
+
+    # Build updates and persist locally
+    updates = [{"id": p.id, "analysis": analysis} for p, analysis in zip(props, results)]
     db.update_analysis_batch(updates)
+
+    print(f"💾 Saved {len(updates)} analyses cached")
     return {"status": "ok", "count": len(updates)}
+
+# @app.post("/analyze")
+# async def analyze_all(use_llm: bool = True):
+#     raw = db.fetch_all_raw()
+#     props = [normalizer.normalize(r) for r in raw]
+
+#     loop = asyncio.get_running_loop()
+#     results = await loop.run_in_executor(None, analyzer.analyze_batch, props, use_llm)
+
+#     updates = [{"id": p.id, "analysis": analysis} for p, analysis in zip(props, results)]
+#     db.update_analysis_batch(updates)
+#     return {"status": "ok", "count": len(updates)}
 
 @app.get("/recommend")
 def recommend(q: str = Query(...), session_id: str = Query(None)):

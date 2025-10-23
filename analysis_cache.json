@@ -1,1 +1,797 @@
-{}
+{
+  "ID4xJPM": {
+    "summary": {
+      "id": "ID4xJPM",
+      "title": "Mieszkanie 65,5 m² z dużym balkonem i zielonym widokiem - REZERWACJA",
+      "price": 515000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 7863.0,
+      "city": "Tychy",
+      "bedrooms": 3,
+      "areaM2": 65.5,
+      "features": {
+        "balcony": true,
+        "basement": true,
+        "separate_kitchen": true,
+        "intercom": true
+      }
+    },
+    "condition": "Mieszkanie dostępne od zaraz, w bloku po modernizacji.",
+    "recommendation": "Dobra lokalizacja z zielenią, blisko sklepów i komunikacji. Warto rozważyć ze względu na atrakcyjność oferty."
+  },
+  "ID4ion6": {
+    "summary": {
+      "id": "ID4ion6",
+      "title": "Mieszkanie Lesznowola 102m",
+      "price": 730000.0,
+      "areaM2": 102.0,
+      "bedrooms": 5,
+      "features": {
+        "garden": true,
+        "terrace": true,
+        "parking": true
+      },
+      "location": {
+        "city": "Lesznowola",
+        "voivodeship": "Mazowieckie",
+        "district": "lesznowola"
+      }
+    },
+    "condition": "Mieszkanie w stanie deweloperskim z wysokiej jakości materiałami. Oferuje duży taras, ogród, oraz miejsce parkingowe.",
+    "recommendation": "Dobra lokalizacja z szybkim dojazdem do Warszawy. Odpowiednie dla rodzin. Warto rozważyć, biorąc pod uwagę cenę za m2 oraz dostępne udogodnienia."
+  },
+  "ID4vkcc": {
+    "summary": {
+      "title": "Mieszkanie 3 pokojowe w centrum Czarnej Białostockiej",
+      "price": 330000.0,
+      "areaM2": 578.0,
+      "pricePerM2": 5709.0,
+      "location": "Czarna Białostocka, Podlaskie",
+      "bedrooms": 3,
+      "features": [
+        "balkon",
+        "piwnica"
+      ],
+      "description": "Jasne, ciepłe, przestronne mieszkanie na trzecim piętrze w zadbanym bloku, blisko przystanków, sklepów i szkół."
+    },
+    "condition": "Mieszkanie dostępne od ręki, w dobrym stanie, przemyślane rozmieszczenie.",
+    "recommendation": "Zaleca się negocjowanie ceny; idealna oferta dla rodzin oraz osób starszych."
+  },
+  "ID4vc2q": {
+    "summary": {
+      "id": "ID4vc2q",
+      "title": "Staromieście 53,5 m2",
+      "price": 520000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 9720.0,
+      "city": "Rzeszów",
+      "areaM2": 53.5,
+      "bedrooms": 2,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "air_conditioning": true
+      }
+    },
+    "condition": "Mieszkanie w dobrym stanie, świeżo po remoncie, ciche miejsce w pobliżu infrastruktury.",
+    "recommendation": "Zalecana inwestycja dla osób szukających komfortowego mieszkania z niskimi kosztami utrzymania."
+  },
+  "ID4xPQY": {
+    "summary": {
+      "id": "ID4xPQY",
+      "title": "Topowa lokalizacja I Zadbana kamienica I Sufity 3m",
+      "price": 799000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 13588.0,
+      "city": "Gdańsk",
+      "district": "śródmieście",
+      "bedrooms": 2,
+      "areaM2": 588.0
+    },
+    "condition": {
+      "features": {
+        "basement": true,
+        "intercom": true,
+        "separate_kitchen": true
+      },
+      "limitations": {
+        "balcony": false,
+        "garden": false,
+        "terrace": false,
+        "parking": false,
+        "elevator": false,
+        "bathtub": false,
+        "air_conditioning": false,
+        "security": false
+      }
+    },
+    "recommendation": "Dobre miejsce z potencjałem, ale wymaga uwagi w zakresie spełnienia budowlanych i komfortowych standardów."
+  },
+  "ID4y1q8": {
+    "summary": {
+      "id": "ID4y1q8",
+      "title": "Klimatyczne mieszkanie przy parku- ul.Kanonierska",
+      "price": 399000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 8769.0,
+      "city": "Świdnicki",
+      "voivodeship": "Dolnośląskie",
+      "bedrooms": 2,
+      "areaM2": 455.0
+    },
+    "condition": "Mieszkanie w dobrym stanie, ale wymaga modernizacji (brak klimatyzacji i balkonu). Hol i kuchnia w oddzielnej strefie.",
+    "recommendation": "Zaleca się negocjację ceny, biorąc pod uwagę lokalizację oraz potrzeby na modernizację."
+  },
+  "ID4y1q5": {
+    "summary": {
+      "id": "ID4y1q5",
+      "title": "Przestronne 5 pokoi z dwoma balkonami przy Parku",
+      "price": 850000,
+      "priceCurrency": "PLN",
+      "pricePerM2": 8936,
+      "city": "Chorzów",
+      "voivodeship": "Śląskie",
+      "district": "centrum",
+      "bedrooms": 5,
+      "areaM2": 9512,
+      "features": {
+        "balcony": true,
+        "parking": true
+      }
+    },
+    "condition": "Dobra lokalizacja, przestronne wnętrze, brak ogrodu i piwnicy, jednak obecność 2 balkonów i parkingu.",
+    "recommendation": "Zalecana inwestycja ze względu na dużą przestrzeń i atrakcyjną cenę za metr kwadratowy."
+  },
+  "ID4xJRf": {
+    "summary": "Jasne mieszkanie 2-pokojowe o powierzchni 38 m2, na 4 piętrze w Koninie. Cena: 289000 PLN, z piwnicą. Remont 2023, dobrze wyposażone.",
+    "condition": "Bardzo dobry stan, nowa podłoga, nowa kuchnia, wymieniona instalacja elektryczna.",
+    "recommendation": "Warto rozważyć zakup z uwagi na lokalizację, bliskość usług oraz atrakcyjną cenę na m2."
+  },
+  "ID4y1q4": {
+    "summary": {
+      "id": "ID4y1q4",
+      "title": "DWUSTRONNA EKSPOZYCJA - 3pok., blisko MPK - NISKI BLOK",
+      "price": 499000,
+      "priceCurrency": "PLN",
+      "pricePerM2": 11341,
+      "city": "Kraków",
+      "areaM2": 44,
+      "bedrooms": 3,
+      "condition": "do remontu"
+    },
+    "condition": "Stan mieszkania: do remontu; wykładzina podłogowa w pokojach i kuchni, flizy w łazience.",
+    "recommendation": "Idealne pod inwestycję lub dla pary, atrakcyjna lokalizacja, blisko komunikacji miejskiej."
+  },
+  "ID4y1q3": {
+    "summary": {
+      "title": "Miasteczko Wilanów- M3, balkon, Ip, 2x m.postojowe",
+      "price": 810000,
+      "pricePerM2": 19814,
+      "location": "Warszawa, Mazowieckie, Wilanów",
+      "bedrooms": 2,
+      "areaM2": 40.88,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "security": true
+      }
+    },
+    "condition": "Good condition with essential features like balcony and parking spaces. No basement or garden.",
+    "recommendation": "Consider for purchase if interested in the Wilanów area, ideally suited for small families or professionals. Check pricing compared to similar properties."
+  },
+  "ID4y1q2": {
+    "summary": {
+      "title": "2 pokoje z widokiem na park|po remoncie|Wiatraczna",
+      "price": 670000.0,
+      "pricePerM2": 17867.0,
+      "city": "Warszawa",
+      "district": "praga-południe",
+      "areaM2": 375.0,
+      "bedrooms": 2
+    },
+    "condition": {
+      "features": {
+        "balcony": true,
+        "basement": true,
+        "garden": false,
+        "terrace": false,
+        "parking": false,
+        "elevator": false,
+        "bathtub": false,
+        "air_conditioning": false,
+        "intercom": false,
+        "separate_kitchen": false,
+        "security": false
+      },
+      "remodeled": true
+    },
+    "recommendation": "Atrakcyjna oferta dla osób szukających przestronnych mieszkań w Warszawie. Warto rozważyć z uwagi na lokalizację i widok na park, ale brak wielu udogodnień może być minusem."
+  },
+  "ID4y1q0": {
+    "summary": {
+      "id": "ID4y1q0",
+      "title": "3-pokojowe mieszkanie 57 m² z garażem i piwnicą",
+      "price": 209000.0,
+      "area": 57.8,
+      "location": "Dębice, gmina Maszewo",
+      "bedrooms": 3,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "basement": true
+      },
+      "condition": "do remontu"
+    },
+    "condition": "Mieszkanie w stanie wymagającym remontu, z koniecznością wymiany instalacji elektrycznej.",
+    "recommendation": "Dobra oferta z garażem i piwnicą w spokojnej okolicy, warto negocjować cenę."
+  },
+  "ID4xYf1": {
+    "summary": {
+      "title": "Nowoczesne 3-pokojowe mieszkanie z balkonem i garażem",
+      "price": 779999,
+      "areaM2": 64,
+      "bedrooms": 3,
+      "city": "Kielce",
+      "features": {
+        "balcony": true,
+        "parking": true
+      }
+    },
+    "condition": "Mieszkanie gotowe do zamieszkania od 5 września 2025 roku. Posiada nowoczesne wykończenie i pełne wyposażenie.",
+    "recommendation": "Doskonała oferta z uwagi na lokalizację, bliskość do centrum i dostępność komunikacji miejskiej. Warto umówić się na oglądanie."
+  },
+  "ID4xA3p": {
+    "summary": "Cesja umowy deweloperskiej na 3-pokojowe mieszkanie o powierzchni 56,43 m² z balkonem w Radomiu, planowane oddanie wrzesień 2025, cena 476,000 PLN.",
+    "condition": "Nowe mieszkanie w trakcie budowy, brak wielu udogodnień, ale z możliwością zakupu miejsca postojowego.",
+    "recommendation": "Analizuj lokalny rynek i porównaj ceny, rozważ inwestycję, jeśli spełnia Twoje potrzeby."
+  },
+  "ID4xEFj": {
+    "summary": {
+      "id": "ID4xEFj",
+      "title": "Śródmieście | 1. piętro | Balkon | Spół. - wł.",
+      "price": 540000,
+      "priceCurrency": "PLN",
+      "pricePerM2": 15000,
+      "city": "Gdańsk",
+      "district": "śródmieście",
+      "bedrooms": 1,
+      "areaM2": 36,
+      "features": {
+        "balcony": true,
+        "basement": true,
+        "garden": false,
+        "terrace": false,
+        "parking": false,
+        "elevator": false,
+        "bathtub": false,
+        "air_conditioning": false,
+        "intercom": true,
+        "separate_kitchen": true,
+        "security": false
+      }
+    },
+    "condition": "Good condition; however, lacks several modern amenities such as air conditioning and an elevator.",
+    "recommendation": "Consider for investment due to location and balcony feature, but verify potential renovation costs."
+  },
+  "ID4xVMQ": {
+    "summary": {
+      "id": "ID4xVMQ",
+      "title": "3 pokoje | oddzielna kuchnia | balkon 8 m² | wysoki standard",
+      "price": 715999.0,
+      "city": "Kielce",
+      "areaM2": 60
+    },
+    "condition": "Nowoczesne mieszkanie w wysokim standardzie, dobra lokalizacja blisko centrum.",
+    "recommendation": "Idealne dla rodzin oraz jako inwestycja pod wynajem."
+  },
+  "ID4vUiF": {
+    "summary": {
+      "id": "ID4vUiF",
+      "title": "Apartament 3 pokojowy - Osiedle Rakownica",
+      "price": 680000,
+      "priceCurrency": "PLN",
+      "pricePerM2": 12588,
+      "city": "Jelenia góra",
+      "voivodeship": "Dolnośląskie",
+      "district": "śródmieście",
+      "bedrooms": 3,
+      "areaM2": 54.02,
+      "features": {
+        "balcony": true,
+        "basement": true,
+        "garden": false,
+        "terrace": false,
+        "parking": true,
+        "elevator": false,
+        "bathtub": false,
+        "air_conditioning": false,
+        "intercom": true,
+        "separate_kitchen": false,
+        "security": true
+      }
+    },
+    "condition": "Nowe, z niskimi kosztami utrzymania i dostępem do miejskich mediów.",
+    "recommendation": "Idealne dla rodzin oraz jako inwestycja na wynajem; dobra lokalizacja z dostępem do natury i centrum."
+  },
+  "ID4y1pX": {
+    "summary": {
+      "id": "ID4y1pX",
+      "title": "Dwa pokoje, kuchnia z oknem, balkon",
+      "price": 374000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 9973.0,
+      "city": "Poznań",
+      "voivodeship": "Wielkopolskie",
+      "district": "Grunwald",
+      "bedrooms": 2,
+      "areaM2": 37.5
+    },
+    "condition": "Brak dodatkowych udogodnień, takich jak balkon, parking czy winda.",
+    "recommendation": "Sprawdzić lokalizację i sąsiedztwo; porównać cenę z innymi ofertami w tej okolicy."
+  },
+  "ID4y1pY": {
+    "summary": "Zadbane 2-pokojowe mieszkanie z balkonem w Poznaniu, okolice starego miasta. Cena to 547000 PLN, co daje 10962 PLN za m2.",
+    "condition": "Dobre, bezanie w pełni wyposażone, brak dodatkowych udogodnień takich jak winda czy klimatyzacja.",
+    "recommendation": "Mieszkanie świetne dla osób ceniących spokój zieleni, jednak oferta wymaga rozważenia w kontekście dostępnych udogodnień."
+  },
+  "ID4y1pQ": {
+    "summary": {
+      "title": "Mieszkanie 46,7 m2 w Gorzowie",
+      "price": 408000.0,
+      "pricePerM2": 8737.0,
+      "location": "Gorzów Wielkopolski, Lubuskie, Dzielnica Górczyn",
+      "features": [
+        "balkon",
+        "piwnica",
+        "osobna kuchnia",
+        "interkom"
+      ],
+      "bedrooms": 2,
+      "areaM2": 46.7
+    },
+    "condition": "Mieszkanie dwustronne w dobrym stanie, blisko infrastruktury (szkoła, przedszkola, sklepy). Brak bliskich bloków naprzeciwko.",
+    "recommendation": "Dobre dla rodzin lub jako inwestycja w wynajem, ze względu na lokalizację i dostępność usług."
+  },
+  "ID4xFur": {
+    "summary": {
+      "id": "ID4xFur",
+      "title": "Idealna kawalerka na start lub inwestycję",
+      "price": 450000,
+      "priceCurrency": "PLN",
+      "pricePerM2": 18211,
+      "city": "Wrocław",
+      "district": "psie pole",
+      "bedrooms": 1,
+      "areaM2": 2471,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "intercom": true,
+        "security": true
+      }
+    },
+    "condition": "Wysoka cena za m² w porównaniu do innych ofert w regionie.",
+    "recommendation": "Zalecana analiza rynku przed podjęciem decyzji o zakupie."
+  },
+  "ID4y1pV": {
+    "summary": {
+      "id": "ID4y1pV",
+      "title": "Ciche 2 pokoje z ogródkiem",
+      "price": 999000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 17744.0,
+      "city": "Warszawa",
+      "district": "Mokotów",
+      "bedrooms": 2,
+      "areaM2": 56.3,
+      "features": {
+        "garden": true,
+        "terrace": true,
+        "parking": true,
+        "security": true
+      }
+    },
+    "condition": "Nowy budynek, dobra lokalizacja.",
+    "recommendation": "Warto rozważyć zakup ze względu na atrakcyjną cenę oraz bliskość do infrastruktury miejskiej."
+  },
+  "ID4xOmG": {
+    "summary": {
+      "id": "ID4xOmG",
+      "title": "Zadbana, tania kawalerka | ul. Białowieska",
+      "price": 355000.0,
+      "pricePerM2": 14916.0,
+      "city": "Wrocław",
+      "district": "fabryczna",
+      "bedrooms": 1,
+      "areaM2": 238.0,
+      "features": {
+        "parking": true,
+        "separate_kitchen": true
+      }
+    },
+    "condition": "Kawalerka zadbana, jednak brak dodatkowych udogodnień jak balkon, ogród czy klimatyzacja. Wysoka cena za m2.",
+    "recommendation": "Rozważyć zakup, jeśli poszukujesz taniego mieszkania z parkingiem w Wrocławiu, ale warto negocjować cenę ze względu na ograniczone udogodnienia."
+  },
+  "ID4xx5p": {
+    "summary": {
+      "id": "ID4xx5p",
+      "title": "Ustawne 2 pokojowe mieszkanie z ładnym widokiem",
+      "price": 320000.0,
+      "pricePerM2": 6531.0,
+      "location": {
+        "city": "Katowice",
+        "district": "śląskiegiszowiec",
+        "voivodeship": "Śląskie"
+      },
+      "areaM2": 49.0,
+      "bedrooms": 2,
+      "features": {
+        "balcony": true,
+        "basement": true,
+        "parking": true,
+        "elevator": true
+      },
+      "description": "Przestronne 2 pokojowe mieszkanie, jasne i sunne na osiedlu Giszowiec. Funkcjonalny układ, kuchnia w dobrym stanie, instalacja miedziana."
+    },
+    "condition": "Mieszkanie w dobrym stanie, po termomodernizacji. Okna PCV, antywłamaniowe drzwi, miedziana instalacja elektryczna, wymienione piony wod-kan.",
+    "recommendation": "Dobra lokalizacja z bogatą infrastrukturą. Cena do negocjacji. Rozważ zakup ze względu na atrakcje otoczenia i funkcjonalność mieszkania."
+  },
+  "ID4xTxD": {
+    "summary": "Mieszkanie 67 m² do aranżacji w centrum Wrocławia. Cena 670000 PLN, 9964 PLN/m².",
+    "condition": "Dobre miejsce, blisko centrum; wymaga remontu.",
+    "recommendation": "Rozważyć zakup ze względu na lokalizację, ale zaplanować budżet na remont."
+  },
+  "ID4y1pD": {
+    "summary": "Mieszkanie 36m2 w Włocławku, 2 pokoje, balkon, umeblowane, dostępne od 1.12.2025.",
+    "condition": "Gotowe do wprowadzenia, bez nakładów finansowych. Dobra lokalizacja blisko szkół i sklepów.",
+    "recommendation": "Rozważyć zakup ze względu na komfort i lokalizację, sprawdzić opcje finansowania przed dostępnością."
+  },
+  "ID4y1pP": {
+    "summary": "Mieszkanie 3-pokojowe w Krzykach, Wrocław, o powierzchni 55 m2, w cenie 750000 PLN. Doskonała lokalizacja w centrum, blisko galerii Wroclavia i transportu publicznego. Pokoje odnowione, gotowe do zamieszkania.",
+    "condition": "Mieszkanie w dobrym stanie technicznym, wymaga minimalnych nakładów. Ogrzewanie miejskie.",
+    "recommendation": "Zaleca się zakup dla osób szukających mieszkania w centrum Wrocławia. Atrakcyjna lokalizacja blisko zieleni i udogodnień miejskich."
+  },
+  "ID4y1pR": {
+    "summary": {
+      "id": "ID4y1pR",
+      "title": "Mieszkanie PREMIUM obok lasu - super lokalizacja!",
+      "price": 499000.0,
+      "pricePerM2": 8550.0,
+      "city": "Rzeszów",
+      "voivodeship": "Podkarpackie",
+      "bedrooms": 3,
+      "areaM2": 5836.0
+    },
+    "condition": {
+      "features": {
+        "balcony": false,
+        "basement": false,
+        "garden": false,
+        "terrace": false,
+        "parking": true,
+        "elevator": false,
+        "bathtub": false,
+        "air_conditioning": false,
+        "intercom": false,
+        "separate_kitchen": false,
+        "security": false
+      }
+    },
+    "recommendation": "Zaletą jest dobra lokalizacja blisko lasu, ale warto rozważyć dodatkowe udogodnienia, które mogłyby zwiększyć atrakcyjność mieszkania."
+  },
+  "ID4wYLX": {
+    "summary": {
+      "title": "Nova Sośnica | mieszkanie 2-pok. | B12",
+      "price": 358000,
+      "pricePerM2": 8589,
+      "location": "Gliwice, Śląskie",
+      "area": 4168,
+      "bedrooms": 2,
+      "features": {
+        "balcony": true,
+        "garden": true,
+        "parking": true
+      }
+    },
+    "condition": "Nowe mieszkanie w inwestycji z dogodną lokalizacją w Gliwicach, w pobliżu komunikacji miejskiej i infrastruktury.",
+    "recommendation": "Dobre dla rodzin oraz osób aktywnych zawodowo. Zaleca się szybkie podjęcie decyzji ze względu na atrakcyjną cenę i lokalizację."
+  },
+  "ID4umS4": {
+    "summary": "Inwestycja Bulwary Praskie Kwartał NOP w Warszawie na Pradze Północ, to nowoczesny kompleks mieszkaniowy z 10 budynkami wielorodzinnymi, oferującymi 747 mieszkań. Teren osiedla zapewnia liczne udogodnienia i dostęp do komunikacji publicznej.",
+    "condition": "W trakcie budowy, planowane oddanie w III kwartale 2025 roku.",
+    "recommendation": "Warto rozważyć inwestycję ze względu na atrakcyjną lokalizację, nowoczesne rozwiązania oraz zróżnicowaną ofertę mieszkań."
+  },
+  "ID4ufV2": {
+    "summary": "3-pokojowe mieszkanie o powierzchni 56m2 z balkonem, położone w Wrocławiu, dzielnica Krzyki. W ofercie również miejsca postojowe, dostęp do infrastruktury i komunikacji.",
+    "condition": "Nowa inwestycja na etapie budowy, nieosiągalna dla nabywców bezpośrednich.",
+    "recommendation": "Zaleca się monitorować postęp budowy oraz sprawdzić ceny jednostkowe dla mieszkań w okolicy, aby ocenić wartość inwestycji."
+  },
+  "ID4ug6X": {
+    "summary": "Nowoczesna inwestycja 'City Łobzów' w Krakowie, blisko komunikacji miejskiej, z przestronnymi mieszkaniami.",
+    "condition": "Brak ustalonej ceny oraz powierzchni mieszkań, termin oddania w sierpniu 2025 roku.",
+    "recommendation": "Monitorować rozwój projektu, ocenić ceny po zakończeniu budowy i analizować rynek wynajmu/kupna mieszkań w 2025 roku."
+  },
+  "ID4xsUL": {
+    "summary": "Rumia Centralna to inwestycja w Rumi, oferująca harmonijne połączenie tradycji i nowoczesności. Zlokalizowana przy ul. Sobieskiego, 25 minut od centrum Gdyni, osiedle zapewnia dostęp do licznych udogodnień, takich jak place zabaw i strefy rekreacyjne.",
+    "condition": "Brak podanej ceny, wielkość 4169 m2, z parkingiem, brak innych istotnych udogodnień. Osiedle w stanie deweloperskim, w fazie realizacji.",
+    "recommendation": "Zalecane zainwestowanie w projekt po zweryfikowaniu ceny oraz dostępnych mieszkań. Rozważenie lokalnego rynku nieruchomości oraz zwiększenie działań marketingowych."
+  },
+  "ID4xjxP": {
+    "summary": "3-pokojowe mieszkanie o powierzchni 55m2 w Łodzi, z balkonem, w nowoczesnej inwestycji Artepolis. Cena wynosi 545000 PLN, co daje 9895 PLN za m2. Mieszkanie położone w atrakcyjnej lokalizacji, blisko Parku na Zdrowiu i komunikacji miejskiej.",
+    "condition": "Dobry stan, nowoczesny styl, brak dodatkowych udogodnień jak winda i klimatyzacja.",
+    "recommendation": "Zalecam zakup, zwłaszcza dla osób ceniących nowoczesne otoczenie i bliskość terenów zielonych oraz infrastruktury miejskiej."
+  },
+  "ID4y1kv": {
+    "summary": {
+      "id": "ID4y1kv",
+      "title": "Sprzedam segment 162 mkw w Markach, blisko M1 i granicy Warszawy.",
+      "price": 1300000.0,
+      "location": "Marki, Mazowieckie",
+      "areaM2": 162,
+      "bedrooms": 5,
+      "features": [
+        "balcony",
+        "garden",
+        "terrace",
+        "parking",
+        "air_conditioning"
+      ],
+      "description": "Dwupoziomowe mieszkanie z możliwością wynajmu dwóch niezależnych mieszkań."
+    },
+    "condition": "Uregulowany stan prawny, Księga Wieczysta. Niskie koszty utrzymania, potrzebne media w standardzie.",
+    "recommendation": "Dobra propozycja dla rodzin i inwestorów ze względu na możliwość wynajmu. Rekomenduję negocjację ceny."
+  },
+  "ID4y1iZ": {
+    "summary": {
+      "id": "ID4y1iZ",
+      "title": "Wykończone mieszkanie 62m2 - GOTOWE DO ZAMIESZKANIA",
+      "price": 365000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 5887.0,
+      "location": {
+        "city": "Wągrowiecki",
+        "voivodeship": "Wielkopolskie",
+        "district": "skoki"
+      },
+      "details": {
+        "bedrooms": 3,
+        "areaM2": 62.0,
+        "features": {
+          "balcony": true,
+          "basement": true,
+          "parking": true
+        }
+      }
+    },
+    "condition": "Mieszkanie jest po generalnym remoncie, w pełni wykończone i gotowe do zamieszkania. Niski koszt utrzymania, brak czynszu.",
+    "recommendation": "Idealne dla rodzin z dziećmi i zwierzętami, lokalizacja w pobliżu usług i dobrej komunikacji. Warto rozważyć zakup."
+  },
+  "ID4xqIg": {
+    "summary": {
+      "id": "ID4xqIg",
+      "title": "Sosnowiec - 4 letni budynek nowoczesny, oszczedny 32m2 - Żelazna",
+      "price": 345500.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 10797.0,
+      "city": "Sosnowiec",
+      "areaM2": 32.0,
+      "bedrooms": 2,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "security": true,
+        "intercom": true
+      }
+    },
+    "condition": "Mieszkanie w wysokim standardzie, gotowe do wprowadzenia lub wynajmu, wykończone z dbałością o szczegóły, posiada balkon i przypisane miejsce parkingowe.",
+    "recommendation": "Zaleca się zakup jako inwestycję na wynajem, ze względu na rozwojową lokalizację oraz nowoczesne udogodnienia."
+  },
+  "ID4xbVZ": {
+    "summary": "Atrakcyjne 3-pokojowe mieszkanie o pow. 68 m2 w Rumi, na zamkniętym osiedlu Rumia Park. Mieszkanie na 2. piętrze, przestronne i jasne, oferujące balkon oraz dostęp do terenów wspólnych.",
+    "condition": "Mieszkanie w dobrym stanie, w większości umeblowane, z nowoczesnym AGD. Czynsz wynosi ok. 560 zł miesięcznie, ogrzewanie miejskie.",
+    "recommendation": "Rozważ zakup dla rodzin z dziećmi lub osób szukających spokojnego miejsca. Blisko do centrum handlowego i atrakcji rekreacyjnych."
+  },
+  "ID4usUB": {
+    "summary": "4-pokojowe mieszkanie o powierzchni 90m2 w Łodzi, bez prowizji. Oferta dewelopera Okam Capital w centralnej lokalizacji. Z balkonem, ogrodem i parkingiem.",
+    "condition": "Nowa inwestycja w atrakcyjnej lokalizacji, blisko kultury i handlu.",
+    "recommendation": "Zaleca się rozważenie zakupu, ze względu na dodatnie cechy mieszkania oraz lokalizację."
+  },
+  "ID4wgRo": {
+    "summary": {
+      "id": "ID4wgRo",
+      "title": "Inwestycja Lipowa 43",
+      "location": "Łódź, Stare Polesie",
+      "areaM2": 37115.0,
+      "features": {
+        "balcony": true,
+        "terrace": true,
+        "parking": true,
+        "security": true
+      }
+    },
+    "condition": "Nowa inwestycja w atrakcyjnej lokalizacji z nowoczesnym designem i komfortowym poziomem życia. Oferta różnorodnych mieszkań od 37 do 116 mkw.",
+    "recommendation": "Warto rozważyć inwestycję, szczególnie dla osób szukających mieszkań w Łodzi lub inwestorów, ze względu na rozwijającą się lokalizację i nowoczesne udogodnienia."
+  },
+  "ID4x2it": {
+    "summary": {
+      "id": "ID4x2it",
+      "title": "✅ Bez PCC |Nowe Wykończone 3 Pokoje |  Bezpośrednio | Klimatyzacja",
+      "price": 989345.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 18741.0,
+      "city": "Kraków",
+      "district": "podgórze",
+      "bedrooms": 3,
+      "areaM2": 52.79,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "air_conditioning": true,
+        "security": true
+      }
+    },
+    "condition": "Nowe wykończone mieszkanie z wysokim standardem, możliwość zakupu miejsca postojowego, blisko do atrakcji i komunikacji.",
+    "recommendation": "Idealna oferta dla osób szukających nowoczesnych mieszkań z pełnym wyposażeniem, oszczędności z tytułu braku podatku PCC."
+  },
+  "ID4pjbf": {
+    "summary": {
+      "title": "Okazja!2 pokojowe 68m2 w sercu miasta z balkonem !",
+      "price": 448000,
+      "pricePerM2": 6588,
+      "location": "Szczecin, Zachodniopomorskie, Śródmieście",
+      "areaM2": 68,
+      "bedrooms": 2,
+      "features": {
+        "balcony": true,
+        "intercom": true
+      }
+    },
+    "condition": "Brak parkingu, windy oraz klimatyzacji. Mieszkanie w sercu miasta, co może być atrakcyjne dla osób poszukujących dostępu do miejskich udogodnień.",
+    "recommendation": "Rozważyć inwestycję, jeśli lokalizacja i cena są kluczowe. Należy jednak uwzględnić ograniczenia związane z brakiem niektórych udogodnień."
+  },
+  "ID4xT9h": {
+    "summary": {
+      "id": "ID4xT9h",
+      "title": "Mieszkanie 3 Pokoje | 1 Piętro | Premium | Ścisłe Centrum | Blok",
+      "price": 449000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 9553.0,
+      "city": "Radom",
+      "voivodeship": "Mazowieckie",
+      "district": "śródmieście",
+      "bedrooms": 3,
+      "areaM2": 47.0,
+      "features": {
+        "balcony": true,
+        "basement": true,
+        "garden": false,
+        "terrace": false,
+        "parking": false,
+        "elevator": false,
+        "bathtub": false,
+        "air_conditioning": false,
+        "intercom": true,
+        "separate_kitchen": false,
+        "security": true
+      }
+    },
+    "condition": "Mieszkanie w wysokim standardzie, aktualnie w trakcie generalnego remontu, z możliwością wyboru detali wykończenia przez kupującego.",
+    "recommendation": "Zaleca się rozważenie zakupu ze względu na lokalizację w centrum oraz możliwość personalizacji wnętrza. Warto skontaktować się już teraz w celu rezerwacji przed zakończeniem remontu."
+  },
+  "ID4y1pG": {
+    "summary": {
+      "title": "Dni Otwarte | 13.09.2025 | Centrum Wrzeszcza",
+      "price": 439000,
+      "priceCurrency": "PLN",
+      "size": "28,20 m²",
+      "bedrooms": 1,
+      "location": "Gdańsk, Wrzeszcz",
+      "features": {
+        "balkon": true,
+        "winda": true,
+        "kuchnia": "oddzielna",
+        "bez_obciążeń": true
+      }
+    },
+    "condition": "Mieszkanie w dobrym stanie, umeblowane i gotowe do wprowadzenia. Czynsz wynosi ok. 530 zł.",
+    "recommendation": "Idealna inwestycja dla singli i studentów. Zalecany zakup ze względu na lokalizację i dostępność komunikacji."
+  },
+  "ID4y1pF": {
+    "summary": {
+      "id": "ID4y1pF",
+      "title": "Mieszkanie 25,61m2 + balkon,1 pok. obok, nowe/ Dwo",
+      "price": 538770.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 21037.0,
+      "city": "Wrocław",
+      "district": "stare miasto",
+      "bedrooms": 1,
+      "areaM2": 25.61,
+      "features": {
+        "balcony": true,
+        "parking": true,
+        "elevator": false
+      }
+    },
+    "condition": "Nowe mieszkanie w stanie deweloperskim z dobrą lokalizacją w bliskości Dworca Głównego. Idealne do inwestycji.",
+    "recommendation": "Zainwestować, szczególnie dla wynajmu krótkoterminowego w popularnej lokalizacji."
+  },
+  "ID4y1pz": {
+    "summary": {
+      "id": "ID4y1pz",
+      "title": "Po remoncie Wysoki Standard Super Lokalizacja",
+      "price": 765000.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 12399.0,
+      "city": "Poznań",
+      "district": "stare miasto",
+      "bedrooms": 3,
+      "areaM2": 61.7
+    },
+    "condition": "Mieszkanie po gruntownym remoncie, wysokiej jakości wykończenia. W dobrym stanie technicznym i estetycznym.",
+    "recommendation": "Zważywszy na lokalizację i standard wykończenia, cena jest konkurencyjna. Zalecam szybkie podjęcie decyzji ze względu na potencjalne zainteresowanie."
+  },
+  "ID4uisd": {
+    "summary": "Osiedle Heyki City w Szczecinie, na Kępie Parnickiej, oferuje 387 mieszkań z tarasami i loggiami, blisko bulwarów rzeki Odry. Nowoczesna architektura, z licznymi przeszkleniami i zielonymi dziedzińcami, zapewnia przestrzeń mieszkalną, rekreacyjną i usługową.",
+    "condition": "Brak ceny oraz metrażu mieszkań. Projekt jest w fazie rozwoju, co może wpłynąć na dostępność mieszkań oraz ceny w przyszłości.",
+    "recommendation": "Zaleca się monitorowanie postępu budowy i cen mieszkań, aby ocenić potencjalną inwestycję. Skontaktuj się z deweloperem w celu uzyskania szczegółowych informacji."
+  },
+  "ID4xSCq": {
+    "summary": {
+      "id": "ID4xSCq",
+      "title": "Nowoczesne 3-pokojowe mieszkanie z tarasem",
+      "price": 4700.0,
+      "areaM2": 68.0,
+      "city": "Warszawski zachodni",
+      "district": "łomianki",
+      "bedrooms": 3,
+      "features": {
+        "garden": true,
+        "terrace": true,
+        "parking": true,
+        "intercom": true
+      }
+    },
+    "condition": "Mieszkanie nowoczesne, w pełni umeblowane, gotowe do wprowadzenia. Wysokiej jakości wykończenie.",
+    "recommendation": "Dobry wybór dla rodzin, ze względu na lokalizację blisko szkół i usług. Proponuję umówić się na oględziny."
+  },
+  "ID4umiP": {
+    "summary": {
+      "id": "ID4umiP",
+      "title": "3-pokojowe mieszkanie 59m2 + balkon",
+      "price": 695004.0,
+      "priceCurrency": "PLN",
+      "pricePerM2": 11653.0,
+      "city": "Wrocław",
+      "voivodeship": "Dolnośląskie",
+      "district": "fabryczna",
+      "bedrooms": 3,
+      "areaM2": 59.64,
+      "features": {
+        "balcony": true,
+        "garden": true,
+        "parking": true
+      }
+    },
+    "condition": "Nowa inwestycja, blisko usług i zieleni, dobra lokalizacja w Wrocławiu.",
+    "recommendation": "Zalecana jako atrakcyjna opcja dla rodzin, ze względu na bliskość do szkół i terenów rekreacyjnych."
+  },
+  "ID4mmrj": {
+    "summary": {
+      "id": "ID4mmrj",
+      "title": "2-pokojowe mieszkanie z tarasem, ogródkiem oraz miejscem w garażu",
+      "price": 3500.0,
+      "city": "Warszawa",
+      "district": "białołęka",
+      "areaM2": 46.0,
+      "features": {
+        "garden": true,
+        "terrace": true,
+        "parking": true,
+        "security": true
+      }
+    },
+    "condition": "Mieszkanie w dobrym stanie, na kameralnym osiedlu. Wysoka jakość doświetlenia oraz dostęp do niezbędnych udogodnień w pobliżu.",
+    "recommendation": "Dobre miejsce dla osób ceniących spokój i bliskość natury. Zaleca się rozważenie kosztu wynajmu z czynszem oraz mediami."
+  }
+}
