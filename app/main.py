@@ -80,8 +80,16 @@ def recommend(q: str = Query(...), session_id: str = Query(None)):
     """
     Parse query, return filters, results, and advisor text.
     """
-    # fetch raw + normalize into DataFrame
-    raw = db.fetch_all_raw()
+    # # fetch raw + normalize into DataFrame
+    # raw = db.fetch_all_raw()
+
+    try:
+        raw = db.fetch_all_raw()
+        if not isinstance(raw, list):
+            raise ValueError("data.json must contain a list of objects")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to load data: {e}")
+    
     props = [normalizer.normalize(r) for r in raw]
     df = pd.DataFrame([p.__dict__ for p in props])
 
@@ -94,3 +102,4 @@ def recommend(q: str = Query(...), session_id: str = Query(None)):
     top = results.sort_values("price").head(5).to_dict(orient="records")
     advice_text = advisor.advise(q, top)
     return {"filters": filters, "results": top, "advisor": advice_text}
+
