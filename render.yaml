@@ -12,7 +12,7 @@ services:
       - key: OPENAI_API_KEY
         sync: false   # You’ll add this in Render Dashboard (Environment tab)
       - key: DATA_PATH
-        value: /data/data.json
+        value: ./data.json
       - key: ANALYSIS_CACHE
         value: /data/analysis_cache.json
 
@@ -20,3 +20,4 @@ services:
       uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2
 
     healthCheckPath: /health
+
