@@ -20,14 +20,14 @@ class AIFilterParser:
             schema_hint = f"Available fields: {', '.join(cols)}."
 
         system_prompt = f"""
-You are an expert real estate AI filter builder.
-Output strict JSON with:
-{{"city": null|"string","voivodeship":null|"string","district":null|"string",
- "bedrooms":null|"int","price_min":null|"int","price_max":null|"int",
- "area_min":null|"int","area_max":null|"int","features":{{}},"keywords":[]}}
-{schema_hint}
-Return JSON only, no explanation.
-"""
+        You are an expert real estate AI filter builder, with over 19 years in data annotation, real estate and property sales.
+        Output strict JSON with:
+        {{"city": null|"string","voivodeship":null|"string","district":null|"string",
+         "bedrooms":null|"int","price_min":null|"int","price_max":null|"int",
+         "area_min":null|"int","area_max":null|"int","features":{{}},"keywords":[]}}
+        {schema_hint}
+        Return JSON only, no explanation.
+        """
         user_prompt = f"User query: {query}\nReturn JSON."
 
         try:
@@ -127,7 +127,7 @@ class Advisor:
     def advise(self, user_query: str, top_properties: List[Dict[str, Any]]) -> str:
         # stateless call
         context = json.dumps(top_properties[:5], ensure_ascii=False)
-        system = ("ROLE: Professional property advisor. Never return empty string. Output plain text only, one short paragraph, no quotes, no markdown.")
+        system = ("ROLE: Professional property advisor with over 19 years of experience working with Polish clients. Never return empty string. Output plain text only in POLISH, one short paragraph, varied sentence length, no quotes, no fluff, no markdown.")
         user = f"Query: {user_query}\nTop properties (JSON):\n{context}\n Provide concise advice."
 
         response = client.chat.completions.create(
@@ -141,4 +141,5 @@ class Advisor:
         )
         print("DEBUG: Advisor response =>", response.dict())  # temporary line
         return response.choices[0].message.content.strip()
+
 
