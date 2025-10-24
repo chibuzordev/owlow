@@ -94,10 +94,12 @@ def recommend(q: str = Query(...), session_id: str = Query(None)):
     # Replace NaN, inf, -inf before serializing
     results = results.replace([np.inf, -np.inf], np.nan)
     results = results.fillna(0)
+    top = results.sort_values("price").head(5).to_dict(orient="records")
+    advice_text = advisor.advise(q, top)
+
     print("Incoming:", q)
     print("Filters:", filters)
     print("Results:", len(results), "Top sample:", top[:1])
 
-    top = results.sort_values("price").head(5).to_dict(orient="records")
-    advice_text = advisor.advise(q, top)
+
     return {"filters": filters, "results": top, "advisor": advice_text}
