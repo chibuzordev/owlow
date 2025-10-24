@@ -1,14 +1,13 @@
 # app/main.py
-import os, json
+import os, json, asyncio
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-import pandas as pd
+import numpy as np, pandas as pd
 from .models import PropertyNormalizer
 from .ai import AIFilterParser, PropertyAnalyzer, Advisor
 from .recommender import PropertyRecommender, SessionCache
 #from .db_adapter import DBAdapter
 from .db_adapter import LocalDBAdapter as DBAdapter
-import asyncio
 
 app = FastAPI()
 
@@ -80,16 +79,8 @@ def recommend(q: str = Query(...), session_id: str = Query(None)):
     """
     Parse query, return filters, results, and advisor text.
     """
-    # # fetch raw + normalize into DataFrame
-    # raw = db.fetch_all_raw()
-
-    try:
-        raw = db.fetch_all_raw()
-        if not isinstance(raw, list):
-            raise ValueError("data.json must contain a list of objects")
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed to load data: {e}")
-    
+    # fetch raw + normalize into DataFrame
+    raw = db.fetch_all_raw()
     props = [normalizer.normalize(r) for r in raw]
     df = pd.DataFrame([p.__dict__ for p in props])
 
@@ -99,7 +90,14 @@ def recommend(q: str = Query(...), session_id: str = Query(None)):
 
     recommender = PropertyRecommender(df)
     results = recommender.filter_properties(filters)
+
+    # Replace NaN, inf, -inf before serializing
+    results = results.replace([np.inf, -np.inf], np.nan)
+    results = results.fillna(0)
+    print("Incoming:", q)
+    print("Filters:", filters)
+    print("Results:", len(results), "Top sample:", top[:1])
+
     top = results.sort_values("price").head(5).to_dict(orient="records")
     advice_text = advisor.advise(q, top)
     return {"filters": filters, "results": top, "advisor": advice_text}
-
